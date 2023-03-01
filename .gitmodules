@@ -1,0 +1,6 @@
+[submodule "erpy"]
+	path = erpy
+	url = git@github.com:Co-Evolve/erpy.git
+[submodule "simulation-environment"]
+	path = simulation-environment
+	url = git@github.com:sel3-tutorials-2023/simulation-environment.git
