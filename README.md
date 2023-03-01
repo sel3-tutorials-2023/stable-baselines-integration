@@ -15,6 +15,11 @@ Some notes:
   WandB logs from subsequent training iterations will be appended to the original genome's log.
 * A decent set of basic hyperparameters for SB3 algorithms can be
   found [here](https://github.com/DLR-RM/rl-baselines3-zoo/tree/master/hyperparams).
+* Disclaimer: this code trains a controller for the same (targetless) locomotion environment as in the tutorial. The
+  actions here directly control the four actuators (2 per arm), and thus not the amplitude of a lower-level oscillator.
+  You will need to implement this controller hierarchy yourself (by overwriting the SBController and
+  SBControllerSpecification). Do not expect this code (in this current state) to optimize good controllers. It is merely
+  provided as an example on how to integrate stable baselines into the ERPY framework.
 
 Questions or issues? -> dries.marzougui@ugent.be
 
